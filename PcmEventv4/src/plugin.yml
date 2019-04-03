@@ -1,0 +1,47 @@
+name: PcmEventv4
+main: fr.cactuscata.pcmeventv4.PcmEventv4
+author: CactusCata
+version: 1.0.0
+
+commands:
+
+  speed:
+      description: Permet de modifier sa vitesse de deplacement.
+      usage: /<command> [nombre]
+      permission: pcm.event.command.speed
+  warp:
+    aliases: [wp]
+    description: Permet de se teleporter aux coordonees d'un warp.
+    usage: /<command> [warp]
+    permission: pcm.event.command.warp.warp
+        
+  setwarp:
+    description: Permet d'ajouter un warp.
+    usage: /<command> [warp]
+    permission: pcm.event.command.warp.setwarp
+        
+  warps:
+    description: Renvois au joueur la liste des noms de tous les warps.
+    usage: /<command>
+    permission: pcm.event.command.warp.warps
+        
+  delwarp:
+    description: Permet de supprimer un warp.
+    usage: /<command> [warp]
+    permission: pcm.event.command.warp.delwarp
+        
+  warpinfo:
+    description: Permet de recuperer les coordonees d'un warp.
+    usage: /warpinfo [warp]
+    permission: pcm.event.command.warp.warpinfo
+    
+  lag:
+    aliases: [ping]
+    description: Recupere les tps du serveur ainsi que le ping du joueur et lui renvois.
+    permission: pcm.event.command.lag
+    usage: /<command>
+    
+  physic:
+    description: Permet de desactiver a la maniere d'un flip flop la physique du monde.
+    permission: pcm.event.command.physic
+    usage: /<command> [action]
